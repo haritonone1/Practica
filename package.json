@@ -1,0 +1,66 @@
+﻿[
+  {
+    "Name" : "Bali, Indonesia",
+    "Price" : "799",
+    "Nights" : "6",
+    "Persons" : "2",
+    "PhotoURL" : "https://r-cf.bstatic.com/images/hotel/max1024x768/151/151865425.jpg",
+    "Extreme" : false
+  },
+  {
+    "Name" : "Odessa, Ukraine",
+    "Price" : "299",
+    "Nights" : "8",
+    "Persons" : "2",
+    "PhotoURL" : "https://catalantravel.com.ua/wp-content/uploads/2017/01/6us8qcgti9q-1.jpg",
+    "Extreme" : false
+  },
+  {
+    "Name" : "Chisinau, Moldova",
+    "Price" : "39",
+    "Nights" : "2",
+    "Persons" : "2",
+    "PhotoURL" : "https://media-cdn.tripadvisor.com/media/photo-s/10/cc/96/12/valea-morilor.jpg",
+    "Extreme" : false
+  },
+  {
+    "Name" : "Maldives",
+    "Price" : "899",
+    "Nights" : "8",
+    "Persons" : "2",
+    "PhotoURL" : "https://www.thetravelmagazine.net/wp-content/uploads/CONRAD-MALDIVES-Hero_Aerial_The-Spa-Retreat_Rangali-Finolhu-Island_credit-Justin-Nicholas-hi-res.jpg",
+    "Extreme" : false
+  },
+  {
+    "Name" : "Egypt",
+    "Price" : "499",
+    "Nights" : "5",
+    "Persons" : "4",
+    "PhotoURL" : "https://www.travel365.md/wp-content/uploads/2018/03/Egipt-de-pasti-%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82-%D0%BD%D0%B0-%D0%BF%D0%B0%D1%81%D1%85%D1%83-2.jpg",
+    "Extreme" : false
+  },
+  {
+    "Name" : "Verna, Bulgaria",
+    "Price" : "399",
+    "Nights" : "8",
+    "Persons" : "2",
+    "PhotoURL" : "https://pandatur.md/wp-content/uploads/2017/01/view_2_1440x810.jpg",
+    "Extreme" : false
+  },
+  {
+    "Name" : "Savanna, Africa",
+    "Price" : "999",
+    "Nights" : "4",
+    "Persons" : "2",
+    "PhotoURL" : "https://thecrumbyvegan.files.wordpress.com/2017/09/lion.jpg",
+    "Extreme" : true
+  },
+  {
+    "Name" : "Elbrus, Russia",
+    "Price" : "2299",
+    "Nights" : "14",
+    "Persons" : "2",
+    "PhotoURL" : "https://www.earths-edge.com/wp-content/uploads/2017/10/Elbrus_.jpg",
+    "Extreme" : true
+  }
+]

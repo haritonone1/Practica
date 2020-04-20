@@ -1,0 +1,1546 @@
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*slider*/
+#slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+}
+
+#slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+}
+
+#slider ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 300px;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+    border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+/*slider*/
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    height: 500px;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topMenu{
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+.selected{
+    border-bottom: 3px solid #C7A329;
+}
+
+.homepageVacanceImage{
+    width: 320px;
+    height: 200px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 2%;
+    float: left;
+}
+
+.menuList{
+    position: absolute;
+    width: 100%;
+    margin-top: 4%;
+    text-align: right;
+    margin-left: -5%;
+}
+.openMenu{
+    display: none;
+}
+
+.listItem{
+    display: inline;
+    margin-left: 3%;
+    font-size: 1.2em;
+    color: #FFFCF5;
+    font-family: 'Nunito';
+}
+
+.sloganDiv{
+    width: 100%;
+    min-height: 100px;
+}
+
+.slogan{
+    font-family: 'Nunito';
+    font-size: 3em;
+    font-weight:800;
+    color:#FFFCF5;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.displayFlex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow{
+    width: 80px;
+    height: 80px;
+}
+
+.description{
+    width: 100%;
+    min-height: 250px;
+    /*background-color:cyan;*/
+    display: flex;
+}
+.descriptionItem{
+    width: 33%;
+    height: 250px;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuItem{
+    width: 33%;
+    height: 250px;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descriptionName{
+    font-size: 1.5em;
+    font-family: 'Nunito';
+    color: #2E3938;
+}
+
+.descriptionSubName{
+    font-size: 0.9em;
+    font-family: 'Nunito';
+    color: #2E3938;
+    padding: 4%;
+    text-align: center;
+}
+
+.borderBottom{
+    width: 60%;
+    border-bottom: 1px solid #E8E8C2;
+}
+
+.borderBottom80{
+    margin-top: 1%;
+    width: 80%;
+    border-bottom: 1px solid #E8E8C2;
+}
+
+.hotOffers{
+    width: 100%;
+    min-height: 600px;
+    background-color: #fcfcfc;
+}
+
+.hotOffersMenu{
+    display: flex;
+}
+
+.hotOffersTitle{
+    width: 100%;
+    font-size: 3em;
+    font-family: 'Nunito';
+    color: #6EA194;
+    text-align: center;
+    padding-top: 1.5%;
+    font-weight: 800;
+}
+
+.sectionTitle{
+    width: 100%;
+    font-size: 2.5em;
+    font-family: 'Nunito';
+    color: #6EA194;
+    text-align: center;
+    padding-top: 1.5%;
+    font-weight: 800;
+}
+.hotOffersMenuItemName{
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Nunito';
+    color: #2E3938;
+}
+
+
+.extreme{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.extremeTop{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.image40{
+    width: 40%;
+    height: 350px;
+    margin:2%;
+}
+
+.image50{
+    width: 50%;
+    height: 350px;
+    margin:2%;
+}
+
+.image40:hover{
+    opacity: 80%;
+}
+.image50:hover{
+    opacity: 80%;
+}
+.image80:hover{
+    opacity: 80%;
+}
+.image80{
+    width: 80%;
+    height: 500px;
+    margin: 3%;
+}
+
+.extremeImage{
+    width: 100%;
+    height: 100%;
+}
+.extremeName{
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    color:black;
+    text-align: center;
+}
+
+.extremeBig{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socialMedia{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.socialMediaItem{
+    width: 2%;
+    height: 30px;
+    margin:1%;
+}
+.footerBorder{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.copyright{
+    font-size: 0.9em;
+    font-family: 'Nunito';
+    color: #2E3938;
+    padding-top: 1.5%;
+}
+
+/*OFFERS PAGE*/
+
+.mainShop{
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopItem{
+    width: 100%;
+    height: 400px;
+    background-color: #FEFEFE;
+    margin-top:2%;
+    display: flex;
+}
+
+.vacanceImageDiv{
+    width: 30%;
+    height: 300px;
+    margin-top: 3%;
+    margin-left: 20%;
+}
+
+.vacanceImage{
+    width: 100%;
+    height: 100%;
+}
+.vacanceDetails{
+     width: 20%;
+     display: flex;
+     align-items: center;
+ }
+.vacanceDetailIcon{
+    width: 30px;
+    height: 30px;
+    margin-right: 2%;
+}
+.vacanceDetailData{
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Nunito';
+    margin-right: 20%;
+}
+
+.orderVacance{
+    margin-top: 10%;
+    width: 300px;
+    height: 50px;
+    background-color: #C7A329;
+    border-radius: 40px;
+    border:0;
+}
+
+.startTripText{
+    font-size: 2.5em;
+    font-family: 'Nunito';
+    font-weight: 800;
+    
+}
+
+.vacancePrice{
+    padding-top: 5%;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #A53333;
+    font-family: 'Nunito';
+    
+}
+
+.vacanceName{
+    font-size: 2em;
+    font-family: 'Nunito';
+    font-weight: 600;
+    color: #878787;
+}
+
+.vacanceData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 300px;
+    margin-top: 3%;
+    /*background-color: cyan;*/
+}
+
+.showMoreDiv{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showMore{
+    width: 250px;
+    height: 50px;
+    background-color: #74A3FF;
+    border-radius: 40px;
+    border:0;
+}
+
+.about{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.aboutSection{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutSectionName{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.aboutSectionIcon{
+    width: 60px;
+    height: 60px;
+    margin-right: 2%;
+}
+
+.aboutSectionDescription{
+    width: 50%;
+    min-height: 200px;
+    text-align: center;
+}
+
+.descriptionText{
+    font-size: 0.9em;
+    color:#515151;
+    font-family: 'Nunito';
+    font-weight: 800;
+}
+.aboutSectionSlogan{
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: 'Nunito';
+    text-align: center;
+}
+
+.slideShow{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.slideShowItem{
+    width: 100%;
+    height: 100%;
+}
+
+.showMoreText{
+    font-size: 2em;
+    font-weight: 800;
+    font-family: 'Nunito';
+    color: #fff;
+}
+
+.questions{
+    width: 100%;
+    background-color: #F6F6F6;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs{
+     width: 100%;
+     min-height: 180px;
+     display: flex;
+     justify-content: center;
+ }
+
+.questionsTitle{
+    font-size: 2.5em;
+    font-weight: 800;
+    font-family: 'Nunito';
+    padding-top: 1.5%;
+}
+
+
+.textInput{
+    width: 15%;
+    height: 70px;
+    background-color: #F6F6F6;
+    border: 2px solid #C4C4C4;
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-left: 4%;
+    font-size: 1.8em;
+    font-family: 'Nunito';
+    color: #333333;
+}
+.submitInput{
+    color: #fff;
+    font-size: 1.8em;
+    font-family: 'Nunito';
+    width: 15%;
+    height: 70px;
+    background-color: #333333;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.mapDiv{
+    width: 100%;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5%;
+}
+
+.map{
+    width: 60%;
+    height: 400px;
+}
+
+.personalDescription{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.humanDescription{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.human{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+
+.humanImage{
+    width: 25%;
+    height: 450px;
+}
+
+
+.humanName{
+    font-size: 2.2em;
+    font-family: 'Nunito';
+    font-weight: 800;
+    margin-top: 6%;
+}
+
+.humanData{
+    width: 40%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.humanFunction{
+    font-size: 1.2em;
+    font-family: 'Nunito';
+    font-weight: 600;
+    color: #818181;
+    margin-bottom: 10%;
+}
+
+.contactData{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 6%;
+    display: flex;
+    align-items: center;    
+}
+
+.contactDataIcon{
+    width:40px;
+    height: 40px;
+}
+
+.contactDataText{
+    min-width: 50%;
+    font-size: 1.5em;
+    color: #757575;
+    font-family: 'Nunito';
+    padding-left: 5%;
+    display: inline;
+}
+
+@media (max-width: 1100px){
+    .descriptionItem{
+        width: 50%;
+        height: 250px;
+        margin: 2%;
+        display: flex;
+    }
+    .vacanceImageDiv{
+        width: 40%;
+        height: 300px;
+        margin-top: 3%;
+        margin-left: 10%;
+    }
+    .orderVacance{
+        margin-top: 20%;
+        width: 300px;
+        height: 50px;
+        background-color: #C7A329;
+        border-radius: 40px;
+        border:0;
+    }
+}
+
+@media(max-width: 1000px){
+    
+    .extremeTop{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 800px;
+    }
+    
+    .image40{
+        width: 100%;
+        height: 350px;
+        margin:2%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image50{
+        width: 100%;
+        height: 350px;
+        margin:2%;
+        display: flex;
+        justify-content: center;
+    }
+    .extremeImage{
+        width: 80%;
+        height: 85%;
+    }
+}
+
+
+@media (max-width:900px){
+    .menuList{
+        display: none;
+    }
+
+    .openMenuDiv{
+        width: 100%;
+        height: 100px;
+    }
+
+    .openMenu{
+        float: right;
+        margin:4%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+    }
+    .description{
+        width: 100%;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hotOffersMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .questions{
+        width: 100%;
+        background-color: #F6F6F6;
+        min-height: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs{
+        width: 100%;
+        min-height: 130px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .descriptionItem{
+        width: 50%;
+        height: 250px;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menuItem{
+        width: 80%;
+        height: 300px;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socialMediaItem{
+        width: 3%;
+        height: 30px;
+        margin:1%;
+    }
+
+    .shopItem{
+        width: 100%;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vacanceImageDiv{
+        width: 70%;
+        height: 300px;
+        margin-top: 3%;
+        margin-left: -1%;
+    }
+    .vacanceDetails{
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    .vacanceDetailIcon{
+        width: 30px;
+        height: 30px;
+    }
+
+    .orderVacance{
+        margin-top: 2%;
+        width: 300px;
+        height: 50px;
+        background-color: #C7A329;
+        border-radius: 40px;
+        border:0;
+    }
+
+    .textInput{
+        width: 15%;
+        height: 60px;
+        background-color: #F6F6F6;
+        border: 2px solid #C4C4C4;
+        border-radius: 10px;
+        margin-top: 3%;
+        margin-left: 4%;
+        font-size: 1.6em;
+        font-family: 'Nunito';
+        color: #333333;
+    }
+    .submitInput{
+        color: #fff;
+        font-size: 1.6em;
+        font-family: 'Nunito';
+        width: 15%;
+        height: 60px;
+        background-color: #333333;
+        border: 2px solid #333333;
+        border-radius: 10px;
+        margin-top: 3%;
+        margin-left: 4%;
+    }
+    .map{
+        width: 70%;
+        height: 380px;
+    }
+
+
+    .contactDataIcon{
+        width:35px;
+        height: 35px;
+    }
+
+    .contactDataText{
+        min-width: 50%;
+        font-size: 1.4em;
+        color: #757575;
+        font-family: 'Nunito';
+        padding-left: 5%;
+        display: inline;
+    }
+
+    .humanImage{
+        width: 30%;
+        height: 400px;
+    }
+    
+    .humanName{
+        font-size: 2.2em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        margin-top: 6%;
+    }
+
+}
+
+@media (max-width: 800px){
+    .aboutSectionIcon{
+        display: none;
+    }
+    .aboutSectionName{
+        width: 90%;
+        min-height: 80px;
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+    }
+
+    .aboutSectionSlogan{
+        font-size: 2em;
+        font-weight: 600;
+        font-family: 'Nunito';
+        text-align: center;
+    }
+    
+    
+    .aboutSection{
+        width: 100%;
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .humanFunction{
+        font-size: 1.2em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #818181;
+        margin-bottom: 30%;
+    }
+}
+
+@media (max-width: 700px){
+    .vacanceData{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 300px;
+        margin-top: 3%;
+        /*background-color: cyan;*/
+    }
+
+    .shopItem{
+        width: 100%;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vacanceImageDiv{
+        width: 70%;
+        height: 300px;
+        margin-top: 3%;
+        margin-left: -1%;
+    }
+
+    .vacanceDetails{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .vacanceName{
+        font-size: 1.6em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #878787;
+    }
+
+    .vacanceDetailIcon{
+        width: 30px;
+        height: 30px;
+    }
+
+    .orderVacance{
+        margin-top: 2%;
+        width: 300px;
+        height: 50px;
+        background-color: #C7A329;
+        border-radius: 40px;
+        border:0;
+    }
+    .aboutSectionDescription{
+        width: 70%;
+        min-height: 350px;
+        text-align: center;
+    }
+
+    .textInput{
+        width: 18%;
+        height: 50px;
+        background-color: #F6F6F6;
+        border: 2px solid #C4C4C4;
+        border-radius: 10px;
+        margin-top: 3%;
+        margin-left: 4%;
+        font-size: 1.5em;
+        font-family: 'Nunito';
+        color: #333333;
+    }
+    .submitInput{
+        color: #fff;
+        font-size: 1.5em;
+        font-family: 'Nunito';
+        width: 18%;
+        height: 50px;
+        background-color: #333333;
+        border: 2px solid #333333;
+        border-radius: 10px;
+        margin-top: 3%;
+        margin-left: 4%;
+    }
+    
+    .map{
+        width: 80%;
+        height: 350px;
+    }
+
+    .contactDataIcon{
+        width:30px;
+        height: 30px;
+    }
+
+    .contactDataText{
+        min-width: 50%;
+        font-size: 1.2em;
+        color: #757575;
+        font-family: 'Nunito';
+        padding-left: 3%;
+        display: inline;
+    }
+
+    .humanImage{
+        width: 35%;
+        height: 400px;
+    }
+
+    .humanName{
+        font-size: 2.2em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        margin-top: 10%;
+    }
+    
+    .humanFunction{
+        font-size: 1.2em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #818181;
+        margin-bottom: 30%;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    #slider ul li {
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 500px;
+        height: 250px;
+        background: #ccc;
+        text-align: center;
+        line-height: 300px;
+    }
+    
+    .socialMediaItem{
+        width: 5%;
+        height: 30px;
+        margin:1%;
+    }
+
+    .aboutSectionName{
+        width: 90%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+    }
+    
+    .aboutSectionSlogan{
+        font-size: 2em;
+        font-weight: 600;
+        font-family: 'Nunito';
+        text-align: center;
+    }
+    .aboutSection{
+        width: 100%;
+        min-height: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textInput{
+        width: 20%;
+        height: 50px;
+        background-color: #F6F6F6;
+        border: 2px solid #C4C4C4;
+        border-radius: 10px;
+        margin-top: 3%;
+        font-size: 1.3em;
+        font-family: 'Nunito';
+        color: #333333;
+    }
+    .submitInput{
+        color: #fff;
+        font-size: 1.3em;
+        font-family: 'Nunito';
+        width: 20%;
+        height: 50px;
+        background-color: #333333;
+        border: 2px solid #333333;
+        border-radius: 10px;
+        margin-top: 3%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .questions{
+        width: 100%;
+        background-color: #F6F6F6;
+        min-height: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs{
+        width: 100%;
+        min-height: 120px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .map{
+        width: 80%;
+        height: 330px;
+    }
+
+    .contactDataIcon{
+        width:35px;
+        height: 35px;
+    }
+
+    .contactDataText{
+        min-width: 50%;
+        font-size: 1.4em;
+        color: #757575;
+        font-family: 'Nunito';
+        padding-left: 5%;
+        display: inline;
+    }
+
+    .humanImage{
+        width: 40%;
+        height: 380px;
+    }
+
+    .humanName{
+        font-size: 2.2em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        margin-top: 15%;
+    }
+
+    .contactDataIcon{
+        width:30px;
+        height: 30px;
+    }
+
+    .contactDataText{
+        min-width: 50%;
+        font-size: 1.2em;
+        color: #757575;
+        font-family: 'Nunito';
+        padding-left: 5%;
+        display: inline;
+    }
+    
+    .humanData{
+        width: 50%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactData{
+        width: 80%;
+        height: 40px;
+        margin-bottom: 6%;
+        display: flex;
+        align-items: center;
+    }
+
+    .humanFunction{
+        font-size: 1.2em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #818181;
+        margin-bottom: 40%;
+    }
+
+
+}
+
+@media (max-width:500px){
+
+    #slider ul li {
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 400px;
+        height: 200px;
+        background: #ccc;
+        text-align: center;
+        line-height: 300px;
+    }
+    
+    .extremeTop{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .image40{
+        width: 100%;
+        height: 250px;
+        margin:2%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image50{
+        width: 100%;
+        height: 250px;
+        margin:2%;
+        display: flex;
+        justify-content: center;
+    }
+    .extremeImage{
+        width: 85%;
+        height: 85%;
+    }
+
+    .socialMediaItem{
+        width: 7%;
+        height: 30px;
+        margin:1%;
+    }
+    
+    .description{
+        width: 100%;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .descriptionItem{
+        width: 80%;
+        height: 300px;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuItem{
+        width: 80%;
+        height: 300px;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vacanceData{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 300px;
+        margin-top: 3%;
+        /*background-color: cyan;*/
+    }
+
+    .shopItem{
+        width: 100%;
+        min-height: 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vacanceImageDiv{
+        width: 70%;
+        height: 300px;
+        margin-top: 3%;
+        margin-left: -1%;
+    }
+
+    .vacanceDetails{
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+    .vacanceName{
+        font-size: 1.4em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #878787;
+    }
+
+    .vacanceDetailIcon{
+        width: 30px;
+        height: 30px;
+    }
+
+    .orderVacance{
+        margin-top: 2%;
+        width: 300px;
+        height: 50px;
+        background-color: #C7A329;
+        border-radius: 40px;
+        border:0;
+    }
+
+    .aboutSection{
+        width: 100%;
+        min-height: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutSectionDescription{
+        width: 80%;
+        min-height: 350px;
+        text-align: center;
+    }
+
+    .textInput{
+        width: 20%;
+        height: 40px;
+        background-color: #F6F6F6;
+        border: 2px solid #C4C4C4;
+        border-radius: 10px;
+        margin-top: 3%;
+        margin-left: 4%;
+        font-size: 1.3em;
+        font-family: 'Nunito';
+        color: #333333;
+    }
+    .submitInput{
+        color: #fff;
+        font-size: 1.3em;
+        font-family: 'Nunito';
+        width: 20%;
+        height: 40px;
+        background-color: #333333;
+        border: 2px solid #333333;
+        border-radius: 10px;
+        margin-top: 3%;
+        margin-left: 4%;
+    }
+
+    .map{
+        width: 85%;
+        height: 270px;
+    }
+
+}
+@media (max-width: 450px){
+    #slider ul li {
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        height: 160px;
+        background: #ccc;
+        text-align: center;
+        line-height: 300px;
+    }
+
+    .aboutSection{
+        width: 100%;
+        min-height: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textInput{
+        width: 20%;
+        height: 40px;
+        background-color: #F6F6F6;
+        border: 2px solid #C4C4C4;
+        border-radius: 10px;
+        margin-top: 3%;
+        margin-left: 4%;
+        font-size: 1.2em;
+        font-family: 'Nunito';
+        color: #333333;
+    }
+    .submitInput{
+        color: #fff;
+        font-size: 1.2em;
+        font-family: 'Nunito';
+        width: 20%;
+        height: 40px;
+        background-color: #333333;
+        border: 2px solid #333333;
+        border-radius: 10px;
+        margin-top: 3%;
+        margin-left: 4%;
+    }
+
+    .questions{
+        width: 100%;
+        background-color: #F6F6F6;
+        min-height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs{
+        width: 100%;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .humanImage{
+        width: 45%;
+        height: 350px;
+    }
+
+    .humanName{
+        font-size: 1.8em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        margin-top: 30%;
+    }
+
+    .contactDataIcon{
+        width:30px;
+        height: 30px;
+    }
+
+    .contactDataText{
+        min-width: 90%;
+        font-size: 1.2em;
+        color: #757575;
+        font-family: 'Nunito';
+        padding-left: 5%;
+        display: inline;
+    }
+
+    .humanData{
+        width: 50%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactData{
+        width: 80%;
+        height: 40px;
+        margin-bottom: 6%;
+        display: flex;
+        align-items: center;
+    }
+
+    .humanFunction{
+        font-size: 1.2em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #818181;
+        margin-bottom: 40%;
+    }
+
+
+
+}
+
+@media (max-width: 350px){
+    .aboutSectionSlogan{
+        font-size: 1.5em;
+        font-weight: 600;
+        font-family: 'Nunito';
+        text-align: center;
+    }
+    .questionsTitle{
+        font-size: 1.5em;
+        font-weight: 800;
+        font-family: 'Nunito';
+        padding-top: 1.5%;
+    }
+    .aboutSection{
+        width: 100%;
+        min-height: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutSectionDescription{
+        width: 80%;
+        min-height: 400px;
+        text-align: center;
+    }
+
+    .map{
+        width: 85%;
+        height: 240px;
+    }
+
+    .humanImage{
+        width: 50%;
+        height: 350px;
+        margin-top: -20%;
+    }
+
+    .humanName{
+        font-size: 1.5em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        margin-top: 25%;
+    }
+
+    .contactDataIcon{
+        width:20px;
+        height: 20px;
+    }
+
+    .contactDataText{
+        min-width: 50%;
+        font-size: 1.2em;
+        color: #757575;
+        font-family: 'Nunito';
+        padding-left: 5%;
+        display: inline;
+    }
+
+    .humanData{
+        width: 50%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactData{
+        width: 80%;
+        height: 40px;
+        margin-bottom: 6%;
+        display: flex;
+        align-items: center;
+    }
+
+    .humanFunction{
+        font-size: 1.2em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #818181;
+        margin-bottom: 40%;
+    }
+
+
+}
+
+
