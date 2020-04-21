@@ -44,6 +44,11 @@ function addElementsToShop(jsonDataArray,arrayStart,itemsToSpawn,maxElementsInRo
             $(homepageVacances[i]).append('<div class="borderBottom"></div>');
             $(homepageVacances[i]).append('<br>');
             $(homepageVacances[i]).append('<img class="homepageVacanceImage">');
+            $(homepageVacances[i]).children(".hotOffersMenuItemName").attr("id",jsonDataArray[i].ID);
+            let index = $(homepageVacances[i]).children(".hotOffersMenuItemName").attr("id");
+            $(homepageVacances[i]).children(".homepageVacanceImage").click(function(){
+                openItemPage(index);
+            });
             $(homepageVacances[i]).children(".homepageVacanceImage").attr("src", jsonDataArray[i].PhotoURL);
         }
         vacancesPassed += maxElementsInRow;
@@ -62,18 +67,27 @@ function addExtremeVacances(jsonDataArray,arrayStart,maxElementsInRow)
             itemsToSpawn++;
         }
     }
-    console.log(extremeItems);
     
     if(itemsToSpawn >= 2){
         $(".extremeTop").append('<div class="image40"></div>');
         imageDiv = $(".image40");
         $(imageDiv).append('<img class="extremeImage">');
+        let index = extremeItems[0].ID;
+        $(imageDiv).children(".extremeImage").attr("id",index);
         $(imageDiv).children(".extremeImage").attr("src",extremeItems[0].PhotoURL);
+        $(imageDiv).children(".extremeImage").click(function(){
+            openItemPage(index);
+        });
 
         $(".extremeTop").append('<div class="image50"></div>');
         imageDiv = $(".image50");
         $(imageDiv).append('<img class="extremeImage">');
+        let index2 = extremeItems[1].ID;
+        $(imageDiv).children(".extremeImage").attr("id",index2);
         $(imageDiv).children(".extremeImage").attr("src",extremeItems[1].PhotoURL);
+        $(imageDiv).children(".extremeImage").click(function(){
+            openItemPage(index2);
+        });
     }
     
     else if(itemsToSpawn == 1){
@@ -81,7 +95,12 @@ function addExtremeVacances(jsonDataArray,arrayStart,maxElementsInRow)
         $(".extremeTop").append('<div class="image80"></div>');
         imageDiv = $(".image80");
         $(imageDiv).append('<img class="extremeImage">');
+        let index = extremeItems[0].ID;
+        $(imageDiv).children(".extremeImage").attr("id",index);
         $(imageDiv).children(".extremeImage").attr("src",extremeItems[0].PhotoURL);
+        $(imageDiv).children(".extremeImage").click(function(){
+            openItemPage(index);
+        });
     }
     
     

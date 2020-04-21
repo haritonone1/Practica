@@ -8,9 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="JS/Shop.js"></script>
+    <script src="JS/Item.js"></script>
     <script src="JS/Sidebar.js"></script>
-    <script src="JS/PageRedirector.js"></script>
 </head>
 <body>
 <div class="container">
@@ -27,7 +26,7 @@
         <img src="Images/logo.png" alt="" class="logo">
         <list class="menuList">
             <a href="index.html"><ul class="listItem">ACASA</ul></a>
-            <a href="oferte.html"><ul class="listItem selected">OFERTE</ul></a>
+            <a href="oferte.html"><ul class="listItem">OFERTE</ul></a>
             <a href="about.html"><ul class="listItem">DESPRE NOI</ul></a>
             <a href="contacts.html"><ul class="listItem">CONTACTE</ul></a>
         </list>
@@ -42,18 +41,22 @@
             <img src="Images/down-arrow.png" alt="" class="arrow">
         </div>
     </div>
-    <div class="mainShop">
-        <p class="sectionTitle">OFERTELE NOASTRE</p>
-        <div class="borderBottom80"></div>
-        <div class="sortDiv">
-            <img src="Images/sort.png" alt="" class="sort" id="sort" onclick="changeObjectData()">
+    
+    <div class="about">
+        <div class="itemDescription">
+            <div class="aboutSectionName">
+                <p class="aboutSectionSlogan" id="Name"></p>
+            </div>
+            <div class="aboutSectionDescription">
+                <p class="descriptionText" id="Description"></p>
+                <div class="itemPhoto">
+                <img src="Images/phone.png" style="width: 100%;height: 100%" id="itemPhoto">
+                </div>
+            </div>
+            
         </div>
     </div>
-    <div class="showMoreDiv" id="showMoreButton">
-        <button class="showMore" onclick="addShopElements()">
-            <p class="showMoreText">MAI ARATA</p>
-        </button>
-    </div>
+    
     <footer>
         <div class="socialMedia">
             <img src="Images/facebook.png" class="socialMediaItem">
@@ -65,8 +68,6 @@
             <p class="copyright">ALL RIGHTS RESERVED</p>
         </div>
     </footer>
-    
-    
 </div>
 </body>
 </html>

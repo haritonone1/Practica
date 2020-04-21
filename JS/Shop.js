@@ -52,6 +52,12 @@ function addElementsToShop(jsonDataArray,arrayStart,itemsToSpawn)
         $(shopElements[i]).children(".vacanceData").append(`<p class="vacancePrice">${jsonDataArray[i].Price + "$ per person"}</p>`);
         $(shopElements[i]).children(".vacanceData").append(`<button class="orderVacance"></button>`);
         $(shopElements[i]).children(".vacanceData").children(".orderVacance").append(`<p class="startTripText">Start Your Trip</p>`);
+
+        $(shopElements[i]).children(".vacanceImageDiv").children(".vacanceImage").attr("id",jsonDataArray[i].ID);
+        let index = $(shopElements[i]).children(".vacanceImageDiv").children(".vacanceImage").attr("id");
+        $(shopElements[i]).children(".vacanceImageDiv").children(".vacanceImage").click(function(){
+            openItemPage(index);
+        });
     }
     if(turnOffButton)
     {
@@ -78,6 +84,12 @@ function changeObjectData(){
         $(shopItems[i]).children(".vacanceData").children(".vacanceDetails").children(".vacanceDetailData1").text(sortedJSONData[i].Persons);
         $(shopItems[i]).children(".vacanceData").children(".vacanceDetails").children(".vacanceDetailData2").text(sortedJSONData[i].Nights);
         $(shopElements[i]).children(".vacanceData").children(".vacancePrice").text(sortedJSONData[i].Price + "$ per person");
+        $(shopElements[i]).children(".vacanceImageDiv").children(".vacanceImage").removeAttr("id");
+        $(shopElements[i]).children(".vacanceImageDiv").children(".vacanceImage").attr("id",sortedJSONData[i].ID);
+        let index = $(shopElements[i]).children(".vacanceImageDiv").children(".vacanceImage").attr("id");
+        $(shopElements[i]).children(".vacanceImageDiv").children(".vacanceImage").click(function(){
+            openItemPage(index);
+        });
     }
     sortState++;
     // if(sortState > 2){

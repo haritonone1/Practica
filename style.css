@@ -12,6 +12,64 @@ a{
     text-decoration: none;
 }
 
+/*Sidebar*/
+.sidenav {
+    height: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Nunito';
+    color: #a7a7a7;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    border-bottom: 2px solid #232323;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border: 0;
+}
+
+.closeArea{
+    width: 100%;
+    height: 400px;
+    display: block;
+    background-color: white;
+    opacity: 0;
+    padding: 8px 8px 8px 32px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}   
+
+
+/**/
+
 /*slider*/
 #slider {
     width: 100%;
@@ -368,7 +426,7 @@ footer{
 
 .vacanceImageDiv{
     width: 30%;
-    height: 300px;
+    min-height:200px;
     margin-top: 3%;
     margin-left: 20%;
 }
@@ -426,12 +484,20 @@ footer{
     
 }
 
+.itemPhoto{
+    margin-top: 2%;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 2%;
+}
+
 .vacanceName{
     font-size: 2em;
     font-family: 'Nunito';
     font-weight: 600;
     color: #878787;
 }
+
 
 .vacanceData{
     display: flex;
@@ -449,6 +515,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.showMore:hover{
+    cursor:pointer;
 }
 
 .showMore{
@@ -476,6 +546,14 @@ footer{
     align-items: center;
 }
 
+.itemDescription{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .aboutSectionName{
     width: 100%;
     height: 100px;
@@ -492,7 +570,7 @@ footer{
 
 .aboutSectionDescription{
     width: 50%;
-    min-height: 200px;
+    min-height: 400px;
     text-align: center;
 }
 
@@ -599,6 +677,150 @@ footer{
     align-items: center;
 }
 
+/*cart*/
+
+.fullScreen{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.width100{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.cart{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartItem{
+    width: 60%;
+    height: 300px;
+    margin-top: 2%;
+    display: flex;
+    background-color: #FCFCFC;
+    border-radius: 10px;
+}
+
+
+.dataDiv{
+    width: 40%;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.removeItemButton{
+    width: 100%;
+    text-align: right;
+    font-size: 2em;
+    font-family: 'Nunito';
+    margin-top: -1%;
+    margin-left: -3%;
+}
+
+.cartVacanceDetailDiv{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    margin-top: 4%;
+    align-items: center;
+}
+
+.cartDetailPrice{
+    width: 100%;
+    text-align: center;
+    font-family: 'Nunito';
+    font-size: 2em;
+    font-weight: 800;
+    margin-left: 5%;
+    color: #4B4B4B;
+}
+
+.imageDiv{
+    width: 60%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartDetailIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.cartDetailNumber{
+    font-family: 'Nunito';
+    font-size: 2em;
+    font-weight: 800;
+    margin-left: 5%;
+    color: #4B4B4B;
+}
+
+.cartVacanceName{
+    font-size: 2em;
+    font-family: 'Nunito';
+    font-weight: 600;
+    color: #878787;
+}
+
+.finalPriceDiv{
+    width: 60%;
+    height: 80px;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.finalPrice{
+    width: 25%;
+    height: 40px;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    float: right;
+    text-align: center;
+}
+
+.finalPriceText{
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 1.7em;
+    color: #4B4B4B;
+}
+
+.cartButtons{
+    width: 100%;
+    min-height: 300px;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartButton{
+    width: 15%;
+    height: 70px;
+    background-color: #C7A329;
+    border-radius: 113px;
+    border:0;
+    margin-bottom: 2%;
+}
+
+.cartButtonText{
+    font-size: 2em;
+    font-family: 'Nunito';
+    font-weight: 800;
+    color: #fff;
+}
+
+/*cart*/
 .humanDescription{
     width: 100%;
     min-height: 600px;
@@ -689,6 +911,22 @@ footer{
         border-radius: 40px;
         border:0;
     }
+
+    .cartButton{
+        width: 20%;
+        height: 70px;
+        background-color: #C7A329;
+        border-radius: 113px;
+        border:0;
+        margin-bottom: 2%;
+    }
+
+    .cartButtonText{
+        font-size: 2em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        color: #fff;
+    }
 }
 
 @media(max-width: 1000px){
@@ -719,6 +957,23 @@ footer{
         width: 80%;
         height: 85%;
     }
+    
+    .cartButton{
+        width: 22%;
+        height: 70px;
+        background-color: #C7A329;
+        border-radius: 113px;
+        border:0;
+        margin-bottom: 2%;
+    }
+
+    .cartButtonText{
+        font-size: 2em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        color: #fff;
+    }
+    
 }
 
 
@@ -760,6 +1015,7 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+    
 
     .inputs{
         width: 100%;
@@ -881,6 +1137,72 @@ footer{
         margin-top: 6%;
     }
 
+
+    .imageDiv{
+        width: 60%;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fullScreen{
+        width: 90%;
+        height: 80%;
+        border-radius: 10px;
+    }
+    
+    .cartDetailIcon{
+        width: 30px;
+        height: 30px;
+    }
+
+    .cartDetailNumber{
+        font-family: 'Nunito';
+        font-size: 1.8em;
+        font-weight: 800;
+        margin-left: 5%;
+        color: #4B4B4B;
+    }
+
+    .cartVacanceName{
+        font-size: 1.8em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #878787;
+    }
+    .cartDetailPrice{
+        width: 100%;
+        text-align: center;
+        font-family: 'Nunito';
+        font-size: 1.8em;
+        font-weight: 800;
+        margin-left: 5%;
+        color: #4B4B4B;
+    }
+
+    .finalPriceDiv{
+        width: 60%;
+        height: 80px;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .finalPrice{
+        width: 35%;
+        height: 40px;
+        background-color: #EFEFEF;
+        border-radius: 10px;
+        float: right;
+        text-align: center;
+    }
+
+    .finalPriceText{
+        font-family: 'Nunito';
+        font-weight: 800;
+        font-size: 1.7em;
+        color: #4B4B4B;
+    }
 }
 
 @media (max-width: 800px){
@@ -917,6 +1239,87 @@ footer{
         font-weight: 600;
         color: #818181;
         margin-bottom: 30%;
+    }
+
+    .fullScreen{
+        width: 90%;
+        height: 80%;
+        border-radius: 10px;
+    }
+
+    .cartDetailIcon{
+        width: 30px;
+        height: 30px;
+    }
+
+    .cartDetailNumber{
+        font-family: 'Nunito';
+        font-size: 1.8em;
+        font-weight: 800;
+        margin-left: 5%;
+        color: #4B4B4B;
+    }
+
+    .cartVacanceName{
+        font-size: 1.8em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #878787;
+    }
+    .cartDetailPrice{
+        width: 100%;
+        text-align: center;
+        font-family: 'Nunito';
+        font-size: 1.8em;
+        font-weight: 800;
+        margin-left: 5%;
+        color: #4B4B4B;
+    }
+    .cartItem{
+        width: 70%;
+        height: 300px;
+        margin-top: 2%;
+        display: flex;
+        background-color: #FCFCFC;
+        border-radius: 10px;
+    }
+    .finalPriceDiv{
+        width: 70%;
+        height: 80px;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .finalPrice{
+        width: 30%;
+        height: 40px;
+        background-color: #EFEFEF;
+        border-radius: 10px;
+        float: right;
+        text-align: center;
+    }
+
+    .finalPriceText{
+        font-family: 'Nunito';
+        font-weight: 800;
+        font-size: 1.7em;
+        color: #4B4B4B;
+    }
+
+    .cartButton{
+        width: 25%;
+        height: 70px;
+        background-color: #C7A329;
+        border-radius: 113px;
+        border:0;
+        margin-bottom: 2%;
+    }
+
+    .cartButtonText{
+        font-size: 1.8em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        color: #fff;
     }
 }
 
@@ -1041,6 +1444,52 @@ footer{
         margin-bottom: 30%;
     }
 
+    .cartItem{
+        width: 75%;
+        height: 300px;
+        margin-top: 2%;
+        display: flex;
+        background-color: #FCFCFC;
+        border-radius: 10px;
+    }
+    .finalPriceDiv{
+        width: 75%;
+        height: 80px;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .finalPrice{
+        width: 35%;
+        height: 40px;
+        background-color: #EFEFEF;
+        border-radius: 10px;
+        float: right;
+        text-align: center;
+    }
+
+    .finalPriceText{
+        font-family: 'Nunito';
+        font-weight: 800;
+        font-size: 1.7em;
+        color: #4B4B4B;
+    }
+
+    .cartButton{
+        width: 30%;
+        height: 70px;
+        background-color: #C7A329;
+        border-radius: 113px;
+        border:0;
+        margin-bottom: 2%;
+    }
+
+    .cartButtonText{
+        font-size: 1.8em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        color: #fff;
+    }
 }
 
 @media(max-width: 600px){
@@ -1194,7 +1643,47 @@ footer{
         margin-bottom: 40%;
     }
 
+    .cartItem{
+        width: 88%;
+        height: 300px;
+        margin-top: 2%;
+        display: flex;
+        background-color: #FCFCFC;
+        border-radius: 10px;
+    }
+    .cartDetailPrice{
+        width: 100%;
+        text-align: center;
+        font-family: 'Nunito';
+        font-size: 1.5em;
+        font-weight: 800;
+        margin-left: 5%;
+        color: #4B4B4B;
+    }
 
+    .cartVacanceName{
+        font-size: 1.7em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #878787;
+    }
+
+
+    .cartButton{
+        width: 40%;
+        height: 70px;
+        background-color: #C7A329;
+        border-radius: 113px;
+        border:0;
+        margin-bottom: 2%;
+    }
+
+    .cartButtonText{
+        font-size: 1.65em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        color: #fff;
+    }
 }
 
 @media (max-width:500px){
@@ -1364,6 +1853,89 @@ footer{
         width: 85%;
         height: 270px;
     }
+    .fullScreen{
+        width: 90%;
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    .cartDetailNumber{
+        font-family: 'Nunito';
+        font-size: 1.4em;
+        font-weight: 800;
+        margin-left: 5%;
+        color: #4B4B4B;
+    }
+
+    .cartDetailIcon{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .cartItem{
+        width: 90%;
+        height: 250px;
+        margin-top: 2%;
+        display: flex;
+        background-color: #FCFCFC;
+        border-radius: 10px;
+    }
+    .cartDetailPrice{
+        width: 100%;
+        text-align: center;
+        font-family: 'Nunito';
+        font-size: 1.5em;
+        font-weight: 800;
+        margin-left: 5%;
+        color: #4B4B4B;
+    }
+
+    .cartVacanceName{
+        font-size: 1.5em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #878787;
+    }
+
+    .finalPriceDiv{
+        width: 90%;
+        height: 80px;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .finalPrice{
+        width: 45%;
+        height: 40px;
+        background-color: #EFEFEF;
+        border-radius: 10px;
+        float: right;
+        text-align: center;
+    }
+
+    .finalPriceText{
+        font-family: 'Nunito';
+        font-weight: 800;
+        font-size: 1.7em;
+        color: #4B4B4B;
+    }
+
+
+    .cartButton{
+        width: 44%;
+        height: 70px;
+        background-color: #C7A329;
+        border-radius: 113px;
+        border:0;
+        margin-bottom: 2%;
+    }
+
+    .cartButtonText{
+        font-size: 1.6em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        color: #fff;
+    }
 
 }
 @media (max-width: 450px){
@@ -1475,8 +2047,67 @@ footer{
         margin-bottom: 40%;
     }
 
+    .fullScreen{
+        width: 95%;
+        height: 65%;
+        border-radius: 10px;
+    }
+
+    .cartDetailNumber{
+        font-family: 'Nunito';
+        font-size: 1.4em;
+        font-weight: 800;
+        margin-left: 5%;
+        color: #4B4B4B;
+    }
+
+    .cartDetailIcon{
+        width: 25px;
+        height: 25px;
+    }
+
+    .cartItem{
+        width: 90%;
+        height: 250px;
+        margin-top: 2%;
+        display: flex;
+        background-color: #FCFCFC;
+        border-radius: 10px;
+    }
+    .cartDetailPrice{
+        width: 100%;
+        text-align: center;
+        font-family: 'Nunito';
+        font-size: 1.1em;
+        font-weight: 800;
+        margin-left: 5%;
+        color: #4B4B4B;
+    }
+
+    .cartVacanceName{
+        font-size: 1.25em;
+        font-family: 'Nunito';
+        font-weight: 600;
+        color: #878787;
+    }
 
 
+    .cartButton{
+        width: 55%;
+        height: 65px;
+        background-color: #C7A329;
+        border-radius: 113px;
+        border:0;
+        margin-bottom: 4%;
+    }
+
+    .cartButtonText{
+        font-size: 1.65em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        color: #fff;
+    }
+    
 }
 
 @media (max-width: 350px){
@@ -1558,6 +2189,22 @@ footer{
         font-weight: 600;
         color: #818181;
         margin-bottom: 40%;
+    }
+
+    .cartButton{
+        width: 60%;
+        height: 50px;
+        background-color: #C7A329;
+        border-radius: 113px;
+        border:0;
+        margin-bottom: 5%;
+    }
+
+    .cartButtonText{
+        font-size: 1.4em;
+        font-family: 'Nunito';
+        font-weight: 800;
+        color: #fff;
     }
 
 

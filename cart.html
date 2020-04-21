@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="JS/Slider.js"></script>
+    <script src="JS/Sidebar.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">ACASA</a>
+            <a href="oferte.html">OFERTE</a>
+            <a href="about.html">DESPRE NOI</a>
+            <a href="contacts.html">CONTACTE</a>
+        </div>
+        <div class="topMenu">
+        <img src="Images/logo.png" alt="" class="logo">
+        <list class="menuList">
+            <a href="index.html"><ul class="listItem">ACASA</ul></a>
+            <a href="oferte.html"><ul class="listItem">OFERTE</ul></a>
+            <a href="about.html"><ul class="listItem">DESPRE NOI</ul></a>
+            <a href="contacts.html"><ul class="listItem">CONTACTE</ul></a>
+        </list>
+            <div class="openMenuDiv">
+                <img src="Images/open-menu.png" alt="" class="openMenu" onclick="openNav()">
+            </div>
+        </div>
+        <div class="sloganDiv">
+            <p class="slogan">LOREM IPSUM</p>
+        </div>
+        <div class="displayFlex">
+            <img src="Images/down-arrow.png" alt="" class="arrow">
+        </div>
+    </div>
+
+    <div class="cart">
+        <p class="sectionTitle">SHOPPING CART</p>
+        <div class="borderBottom80"></div>
+        
+        <div class="cartItem">
+            <div class="imageDiv">
+                <img src="Images/Elbrus.jpg" class="fullScreen">
+            </div>
+            <div class="dataDiv">
+                <p class="removeItemButton">x</p>
+                <div class="width100">
+                    <p class="cartVacanceName">Elbrus, Russia</p>
+                </div>
+                <div class="cartVacanceDetailDiv">
+                    <img src="Images/human.png" alt="" class="cartDetailIcon">
+                    <p class="cartDetailNumber">2</p>
+                </div>
+                <div class="cartVacanceDetailDiv">
+                    <img src="Images/moon.png" alt="" class="cartDetailIcon">
+                    <p class="cartDetailNumber">14</p>
+                </div>
+
+                <div class="cartVacanceDetailDiv">
+                    <p class="cartDetailPrice">PRICE: 777$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cartItem">
+            <div class="imageDiv">
+                <img src="Images/Elbrus.jpg" class="fullScreen">
+            </div>
+            <div class="dataDiv">
+                <p class="removeItemButton">x</p>
+                <div class="width100">
+                    <p class="cartVacanceName">Elbrus, Russia</p>
+                </div>
+                <div class="cartVacanceDetailDiv">
+                    <img src="Images/human.png" alt="" class="cartDetailIcon">
+                    <p class="cartDetailNumber">2</p>
+                </div>
+                <div class="cartVacanceDetailDiv">
+                    <img src="Images/moon.png" alt="" class="cartDetailIcon">
+                    <p class="cartDetailNumber">14</p>
+                </div>
+
+                <div class="cartVacanceDetailDiv">
+                    <p class="cartDetailPrice">PRICE: 777$</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="finalPriceDiv">
+            <div class="finalPrice">
+                <p class="finalPriceText">999$</p>
+            </div>
+        </div>
+
+        <div class="cartButtons">
+            <button class="cartButton">
+                <p class="cartButtonText">
+                    CHECKOUT
+                </p>
+            </button>
+            <button class="cartButton">
+                <p class="cartButtonText">
+                    CLEAR
+                </p>
+            </button>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="socialMedia">
+            <img src="Images/facebook.png" class="socialMediaItem">
+            <img src="Images/instagram-sketched.png" class="socialMediaItem">
+            <img src="Images/twitter.png" class="socialMediaItem">
+            <img src="Images/youtube.png" class="socialMediaItem">
+        </div>
+        <div class="footerBorder">
+            <p class="copyright">ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
