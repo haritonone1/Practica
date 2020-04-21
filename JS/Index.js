@@ -14,7 +14,6 @@ var getJson = function()
 }
 
 getJson();
-
 var homepageVacances;
 var products;
 function useJson(xhttp) {

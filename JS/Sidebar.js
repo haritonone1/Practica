@@ -1,7 +1,7 @@
 ﻿
 function openNav() {
     $("#mySidenav").show();
-    setTimeout(function(){$("#mySidenav").css("height",200)},1);
+    setTimeout(function(){$("#mySidenav").css("height",260)},1);
 }
 
 function closeNav() {

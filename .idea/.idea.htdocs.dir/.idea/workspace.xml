@@ -3,14 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="b1022848-6352-4554-9bc7-a943ae479135" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.htdocs.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.htdocs.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/bg.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/Cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/Index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/Shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/Sidebar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oferte.html" beforeDir="false" afterPath="$PROJECT_DIR$/oferte.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,19 +39,21 @@
       <list>
         <option value="$PROJECT_DIR$/JS/js.js" />
         <option value="$PROJECT_DIR$/JS/Slider.js" />
-        <option value="$PROJECT_DIR$/contacts.html" />
-        <option value="$PROJECT_DIR$/JS/Sidebar.js" />
-        <option value="$PROJECT_DIR$/about.html" />
-        <option value="$PROJECT_DIR$/item.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/JS/Item.js" />
         <option value="$PROJECT_DIR$/JS/PageRedirector.js" />
-        <option value="$PROJECT_DIR$/oferte.html" />
-        <option value="$PROJECT_DIR$/JS/Index.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/JS/Cart.js" />
+        <option value="$PROJECT_DIR$/cart.html" />
+        <option value="$PROJECT_DIR$/JS/Sidebar.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/item.html" />
+        <option value="$PROJECT_DIR$/oferte.html" />
+        <option value="$PROJECT_DIR$/contacts.html" />
+        <option value="$PROJECT_DIR$/JS/Index.js" />
         <option value="$PROJECT_DIR$/JS/Shop.js" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/cart.html" />
+        <option value="$PROJECT_DIR$/JS/Arrow.js" />
+        <option value="$PROJECT_DIR$/about.html" />
       </list>
     </option>
   </component>
@@ -93,7 +98,7 @@
       <updated>1587374168392</updated>
       <workItem from="1587374173352" duration="11381000" />
       <workItem from="1587389484740" duration="29795000" />
-      <workItem from="1587454912722" duration="20353000" />
+      <workItem from="1587454912722" duration="39205000" />
     </task>
     <servers />
   </component>

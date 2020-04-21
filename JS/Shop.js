@@ -25,6 +25,18 @@ function useJson(xhttp) {
     addElementsToShop(products,0,2)
 }
 
+var vacancesSelectedCount = 0;
+localStorage.clear();
+var items = [];
+
+function addVacanceToCart(id){
+    items[vacancesSelectedCount] = id;
+    vacancesSelectedCount++;
+    localStorage.setItem("cartItems",JSON.stringify(items));
+    alert("Vacanta a fost adaugata.");
+}
+
+
 function addElementsToShop(jsonDataArray,arrayStart,itemsToSpawn)
 {
     var cycleLimit;
@@ -58,6 +70,9 @@ function addElementsToShop(jsonDataArray,arrayStart,itemsToSpawn)
         $(shopElements[i]).children(".vacanceImageDiv").children(".vacanceImage").click(function(){
             openItemPage(index);
         });
+        $(shopElements[i]).children(".vacanceData").children(".orderVacance").click(function(){
+            addVacanceToCart(index);
+        })
     }
     if(turnOffButton)
     {
